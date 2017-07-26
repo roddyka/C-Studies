@@ -1,0 +1,6 @@
+G:\rodrigo arquivos\WebDeveloperCSharp\Aula01\Aula01\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+G:\rodrigo arquivos\WebDeveloperCSharp\Aula01\Aula01\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+G:\rodrigo arquivos\WebDeveloperCSharp\Aula01\Aula01\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+G:\rodrigo arquivos\WebDeveloperCSharp\Aula01\Aula01\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+G:\rodrigo arquivos\WebDeveloperCSharp\Aula01\Aula01\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+G:\rodrigo arquivos\WebDeveloperCSharp\Aula01\Aula01\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

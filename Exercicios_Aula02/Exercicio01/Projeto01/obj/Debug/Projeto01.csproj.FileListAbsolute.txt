@@ -1,0 +1,6 @@
+E:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Exercicios_Aula02\Exercicio01\Projeto01\obj\Debug\Projeto01.csprojResolveAssemblyReference.cache
+E:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Exercicios_Aula02\Exercicio01\Projeto01\bin\Debug\Projeto01.exe.config
+E:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Exercicios_Aula02\Exercicio01\Projeto01\bin\Debug\Projeto01.exe
+E:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Exercicios_Aula02\Exercicio01\Projeto01\bin\Debug\Projeto01.pdb
+E:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Exercicios_Aula02\Exercicio01\Projeto01\obj\Debug\Projeto01.exe
+E:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Exercicios_Aula02\Exercicio01\Projeto01\obj\Debug\Projeto01.pdb

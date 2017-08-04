@@ -34,6 +34,8 @@ namespace Projeto01.Repositories
                     xml.WriteElementString("Nome", p.Nome);
                     xml.WriteElementString("TipoDepartamento", p.tipo.ToString());
                     xml.WriteElementString("Salario", p.Salario.ToString());
+                    xml.WriteElementString("NumeroDepto", p.tipo.ToString());
+                    xml.WriteElementString("Área", p.departamento.ToString());
                     xml.WriteEndElement();
 
                 }

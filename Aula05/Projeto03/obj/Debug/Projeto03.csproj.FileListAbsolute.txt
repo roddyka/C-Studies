@@ -1,0 +1,5 @@
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula05\Projeto03\bin\Debug\Projeto03.exe.config
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula05\Projeto03\bin\Debug\Projeto03.exe
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula05\Projeto03\bin\Debug\Projeto03.pdb
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula05\Projeto03\obj\Debug\Projeto03.exe
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula05\Projeto03\obj\Debug\Projeto03.pdb

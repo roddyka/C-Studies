@@ -41,7 +41,9 @@ namespace Projeto03
                 Console.WriteLine(item);
             }
 
-            Console.WriteLine("primeiro da pilha: " + pilha.Peek());
+            //Console.WriteLine("primeiro da pilha: " + pilha.Peek());
+
+            Console.WriteLine("primeiro da pilha: " + pilha.Pop());
 
             Console.ReadKey();
         }

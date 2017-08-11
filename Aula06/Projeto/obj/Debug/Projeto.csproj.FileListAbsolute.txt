@@ -1,0 +1,8 @@
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula06\Projeto\obj\Debug\Projeto.csprojResolveAssemblyReference.cache
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula06\Projeto\bin\Debug\Projeto.exe.config
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula06\Projeto\bin\Debug\Projeto.exe
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula06\Projeto\bin\Debug\Projeto.pdb
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula06\Projeto\obj\Debug\Projeto.exe
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula06\Projeto\obj\Debug\Projeto.pdb
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula06\Projeto\bin\Debug\App_Data\Banco.mdf
+G:\rodrigo arquivos\WebDeveloperCSharp\C-Studies\Aula06\Projeto\bin\Debug\App_Data\Banco_log.ldf

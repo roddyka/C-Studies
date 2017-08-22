@@ -20,7 +20,7 @@
         <form id="form1" runat="server">
             <div>
                 <div class="col-md-12">
-                    <label>Pesquisar por nome</label>
+                    <label>Pesquisar</label>
                     <asp:TextBox ID="pesquisa" CssClass="form-control" type="text" runat="server"></asp:TextBox>
                     <br />
                     <div class="text-right">

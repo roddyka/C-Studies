@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Projeto.Entidades;
+using Projeto.Entidades.Tipos;
 
 namespace Projeto.DAL
 {
@@ -86,6 +87,86 @@ namespace Projeto.DAL
                 CloseConnection();
             }
         }
+
+        //metodo para listar todos os clientes
+        public List<Cliente> findAll()
+        {
+            try
+            {
+                OpenConnection();
+                string query = "SELECT * FROM Cliente";
+                cmd = new SqlCommand(query, con);
+                dr = cmd.ExecuteReader();
+
+                List<Cliente> lista = new List<Cliente>();
+                while (dr.Read())
+                {
+                    Cliente c = new Cliente();
+                    c.IdCliente = Convert.ToInt32(dr["IdCliente"]);
+                    c.Nome = Convert.ToString(dr["Nome"]);
+                    c.Email = Convert.ToString(dr["Email"]);
+                    c.DataNascimento = Convert.ToDateTime(dr["DataNascimento"]);
+
+                    string sexo = Convert.ToString(dr["Sexo"]);
+                    string estadoCivil = Convert.ToString(dr["EstadoCivil"]);
+
+                    c.Sexo = (Sexo)Enum.Parse(typeof(Sexo), sexo);
+                    c.EstadoCivil = (EstadoCivil)Enum.Parse(typeof(EstadoCivil), estadoCivil);
+
+                    lista.Add(c);
+                }
+                return lista;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Erro ao consultar clientes: " + e.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
+
+        //metodo para listar por id
+        public Cliente findById(int idCliente)
+        {
+            try
+            {
+                OpenConnection();
+                string query = "SELECT * FROM Cliente WHERE IdCliente = @IdCliente";
+                cmd.Parameters.AddWithValue("@IdCliente", idCliente);
+                cmd = new SqlCommand(query, con);
+                dr = cmd.ExecuteReader();
+
+                
+                if(dr.Read())
+                {
+                    Cliente c = new Cliente();
+                    c.IdCliente = Convert.ToInt32(dr["IdCliente"]);
+                    c.Nome = Convert.ToString(dr["Nome"]);
+                    c.Email = Convert.ToString(dr["Email"]);
+                    c.DataNascimento = Convert.ToDateTime(dr["DataNascimento"]);
+
+                    string sexo = Convert.ToString(dr["Sexo"]);
+                    string estadoCivil = Convert.ToString(dr["EstadoCivil"]);
+
+                    c.Sexo = (Sexo)Enum.Parse(typeof(Sexo), sexo);
+                    c.EstadoCivil = (EstadoCivil)Enum.Parse(typeof(EstadoCivil), estadoCivil);
+
+                    return c;
+                }
+                return null;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Erro ao consultar Cliente: " + e.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
+
         //metodo para verificar se algum email ja esta cadastrado
         public bool HasEmail(string email)
         {

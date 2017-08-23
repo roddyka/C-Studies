@@ -150,6 +150,16 @@
   <ItemGroup>
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Projeto.BLL\Projeto.BLL.csproj">
+      <Project>{62cfa700-1f65-4895-9dae-cbd539e59b88}</Project>
+      <Name>Projeto.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Projeto.Entidades\Projeto.Entidades.csproj">
+      <Project>{34c1a772-ef3d-4076-8ef3-fd586824c046}</Project>
+      <Name>Projeto.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

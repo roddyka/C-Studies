@@ -20,43 +20,54 @@
         <form id="form1" runat="server">
             <div>
                 <div class="col-md-12">
-                    <label>Pesquisar</label>
-                    <asp:TextBox ID="pesquisa" CssClass="form-control" type="text" runat="server"></asp:TextBox>
-                    <br />
-                    <div class="text-right">
-                    <asp:Button ID="btnConsultar" runat="server" Text="Consultar" CssClass="btn btn-success" OnClick="btnConsultar_Click"/>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <table class="table">
-                        <thead>
-                          <tr>
-                            <th>Id</th>
-                            <th>Nome</th>
-                            <th>Email</th>
-                              <th>Sexo</th>
-                              <th>Data de Nascimento</th>
-                              <th>Ação: </th>
-                              <th></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
-                              <td>Masculino</td>
-                              <td>20/06/1992</td>
-                              <td><asp:Button ID="btnEditar" runat="server" Text="Editar" CssClass="btn btn-warning" OnClick="btnEditar_Click"/></td>
-                              <td><asp:Button ID="btnExcluir" runat="server" Text="Excluir" CssClass="btn btn-danger" OnClick="btnExcluir_Click"/></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    <br />
+                    <p><asp:Label ID="lblMensagem" runat="server"></asp:Label></p>
+                    <asp:GridView ID="gridClientes" runat="server" GridLines="None" CssClass="table table-hover" AutoGenerateColumns="false" 
+                        AllowPaging="true" PageSize="5" OnPageIndexChanging="gridClientes_PageIndexChanging">
+                        <PagerSettings
+                    NextPageText="   Próxima >"
+                    PreviousPageText="< Anterior   "
+                    Mode="NextPrevious"
                     
-                    
-                    <br />
-                    <asp:Label ID="lblMensagem" runat="server"></asp:Label>
+                 />
+                        <Columns>                          
+                            <asp:TemplateField HeaderText="Nome do Cliente">
+                                <ItemTemplate>
+                                    <%# Eval("Nome") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+
+                             <asp:TemplateField HeaderText="Endereço de Email">
+                                <ItemTemplate>
+                                    <%# Eval("Email") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+
+                             <asp:TemplateField HeaderText="Data de Nascimento">
+                                <ItemTemplate>
+                                    <%# Eval("DataNascimento", "{0:dd/MM/yyyy}") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            
+                             <asp:TemplateField HeaderText="Sexo">
+                                <ItemTemplate>
+                                    <%# Eval("Sexo") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            
+                             <asp:TemplateField HeaderText="Estado Civil">
+                                <ItemTemplate>
+                                    <%# Eval("EstadoCivil") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+
+                            <asp:TemplateField HeaderText="Operações">
+                                <ItemTemplate>
+                                   <a href="Exclusao.aspx?id=<%# Eval("IdCliente") %>" class="btn btn-danger btn-sm">Excluir</a>
+                                    <a href="Edicao.aspx?id=<%# Eval("IdCliente") %>" class="btn btn-primary btn-sm">Atualizar</a>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                        </Columns>
+                    </asp:GridView>
                 </div>
             </div>
         </form>

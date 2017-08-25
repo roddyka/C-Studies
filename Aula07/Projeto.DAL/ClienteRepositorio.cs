@@ -134,8 +134,9 @@ namespace Projeto.DAL
             {
                 OpenConnection();
                 string query = "SELECT * FROM Cliente WHERE IdCliente = @IdCliente";
-                cmd.Parameters.AddWithValue("@IdCliente", idCliente);
+                
                 cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@IdCliente", idCliente);
                 dr = cmd.ExecuteReader();
 
                 

@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Modelagem de Entidades", "1 - Modelagem de Entidades", "{E19350E2-A020-4A18-A6F2-1195C3D4D942}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Sistema", "2 - Sistema", "{12CC3163-C1FE-46C4-A3BD-2D30456650DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Entidades", "Projeto.Entidades\Projeto.Entidades.csproj", "{F8E0FCB3-555F-414B-BC57-82086376001A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1 - Camada de Apresentação", "2.1 - Camada de Apresentação", "{24994E43-7C35-4BA4-8E75-EC58BE90EE9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.2 - Camada de Regra de Negocio", "2.2 - Camada de Regra de Negocio", "{57A77A0D-5497-4D0C-AF46-3B715AEE4643}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.3 - Camada de Acesso a Dados", "2.3 - Camada de Acesso a Dados", "{99F22E55-F2E8-4429-B8C9-10ECA9EF7315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.WEB", "Projeto.WEB\Projeto.WEB.csproj", "{5FD0C53A-F284-49B1-880B-3678FE6978A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8E0FCB3-555F-414B-BC57-82086376001A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E0FCB3-555F-414B-BC57-82086376001A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E0FCB3-555F-414B-BC57-82086376001A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E0FCB3-555F-414B-BC57-82086376001A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD0C53A-F284-49B1-880B-3678FE6978A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD0C53A-F284-49B1-880B-3678FE6978A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD0C53A-F284-49B1-880B-3678FE6978A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD0C53A-F284-49B1-880B-3678FE6978A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8E0FCB3-555F-414B-BC57-82086376001A} = {E19350E2-A020-4A18-A6F2-1195C3D4D942}
+		{24994E43-7C35-4BA4-8E75-EC58BE90EE9F} = {12CC3163-C1FE-46C4-A3BD-2D30456650DE}
+		{57A77A0D-5497-4D0C-AF46-3B715AEE4643} = {12CC3163-C1FE-46C4-A3BD-2D30456650DE}
+		{99F22E55-F2E8-4429-B8C9-10ECA9EF7315} = {12CC3163-C1FE-46C4-A3BD-2D30456650DE}
+		{5FD0C53A-F284-49B1-880B-3678FE6978A1} = {24994E43-7C35-4BA4-8E75-EC58BE90EE9F}
+	EndGlobalSection
+EndGlobal

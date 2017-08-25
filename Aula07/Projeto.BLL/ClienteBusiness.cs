@@ -23,5 +23,64 @@ namespace Projeto.BLL
             }
         }
 
+        public void Atualizar(Cliente c)
+        {
+            MaiorDeIdadeSpecification spMaiorIdade = new MaiorDeIdadeSpecification();
+
+            if (spMaiorIdade.IsValid(c))
+            {
+                ClienteRepositorio rep = new ClienteRepositorio();
+                Cliente registro = rep.findById(c.IdCliente);
+
+                if (registro != null)
+                { 
+                    registro.Nome = c.Nome;
+                    registro.DataNascimento = c.DataNascimento;
+                    registro.Sexo = c.Sexo;
+                    registro.EstadoCivil = c.EstadoCivil;
+
+                    rep.Update(registro);
+                }
+                else
+                {
+                    throw new Exception("Cliente não encontrado.");
+                }
+            }
+        }
+
+        public void Excluir(int idCliente)
+        {
+            ClienteRepositorio rep = new ClienteRepositorio();
+            if(rep.findById(idCliente) != null)
+            {
+                rep.Delete(idCliente);
+            }
+            else
+            {
+                throw new Exception("Cliente não encontrado.");
+            }
+        }
+
+        public List<Cliente> Consultar()
+        {
+            ClienteRepositorio rep = new ClienteRepositorio();
+            return rep.findAll();
+        }
+
+        public Cliente ObterPorId(int idCliente)
+        {
+            ClienteRepositorio rep = new ClienteRepositorio();
+            Cliente registro = rep.findById(idCliente);
+
+            if(registro != null)
+            {
+                return registro;
+            }
+            else
+            {
+                throw new Exception("Cliente não encontrado.");
+            }
+        }
+
     }
 }

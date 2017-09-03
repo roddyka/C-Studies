@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Projeto.WEB.Templates.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>COTI Informática</title>
+ 
+    <!-- folha de estilo do bootstrap -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+
+</head>
+<body class="container">
+
+    <div class="well well-sm">
+        <h2>Projeto Login de Usuários</h2>
+    </div>
+
+    <form id="form1" runat="server">
+        <div>
+          
+            <!-- Local para receber conteudo de outras páginas -->
+            <asp:ContentPlaceHolder ID="conteudoPrincipal" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+
+</body>
+</html>
